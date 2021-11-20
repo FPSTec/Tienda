@@ -1,15 +1,14 @@
-<!doctype html>
-<html lang="es">
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- CSRF Token -->
-    <meta name="csrf-token" content="oooOoyKFvKppg2Zbpe0r2rN1lUoBQXCM5ayejCUa">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
-        <title>FPSTec - Tienda</title>
-
-		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<title>FPSTec</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,7 +16,9 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery.min.js"></script>
 <!--<script src="js/jquery.easydropdown.js"></script>-->
-
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fwslider.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQZLCMK1WW"></script>
 <script>
@@ -76,250 +77,588 @@
     
     
     <header class="header-area header-3">
-    <div class="desktop-nav d-none d-lg-block">
+		<div class="desktop-nav d-none d-lg-block">
              
         
-        <div class="header-middle">
-            <div class="container-fluid custom-container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <a href="#" class="hvr-grow">
-                            <img src="https://cdn.discordapp.com/attachments/722535444776222854/911102530778443798/unknown.png" alt="Logo FPSTec">
-                        </a>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="header-search-cart  d-flex align-items-center">
-                            <div class="header-contact d-flex align-items-center">
-                                <ul class="footer_box">
-                                    <div class="mt-3">
-                                        <a href="https://www.facebook.com/FPS-Tec-110376924758775">
-                                            <img src="https://media.discordapp.net/attachments/722535444776222854/911459950839079032/logotipo-facebook.png" width="100" height="30">
-                                        </a>
-                                        <a href="https://www.instagram.com/fpstec_sac/">
-                                            <img src="https://media.discordapp.net/attachments/722535444776222854/911457784686608405/Instagram-logo.png" width="50" height="25">
-                                        </a>
-                                        <a href="https://www.youtube.com/channel/UC10p-QcTRTkm1MQeuvD2KwA">
-                                            <img src="https://media.discordapp.net/attachments/722535444776222854/911459114545209354/ytlogo.png" width="60" height="25">
-                                        </a>
-                                        <a href="https://blogfpstec.blogspot.com/">
-                                            <img src="https://media.discordapp.net/attachments/722535444776222854/911462462249893919/blog.png" width="60" height="25">
-                                        </a>
-                                    </div>
-                                </ul>
-                            </div>
-                            <input-search-index-component></input-search-index-component>
-                            
-                                 <div class="header-cart">
-                                    <div class="cart-btn">
-                                        <a>
-                                            <i class="far fa-shopping-bag"></i>
-                                            <span class="text">Carrito</span>
-                                            <span class="total">S/0.00</span>
-                                            <span class="total">$0.00</span>
-                                            <span class="count">0</span>
-                                        </a>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="header-menu">
-            <div class="container-fluid custom-container">
-                <div class="row ">
-                    <div class="col-lg-3">
-                        <div class="header-menu-vertical">
-                            <h4 class="menu-title">MENU</h4>
-                            <ul class="menu-content menu-expand">
-                                <li class="menu-item">
-                                    <a href="conponentes.html">
-                                         Componentes de PC
-                                         <i class="fal fa-chevron-right"></i>
-                                    </a>
-                                        <ul class="sub-menu row" style="width: 1000px;">
-                                                     <li class="col-md-3">
-                                                        <a href="#">
-                                                            <figure>
-                                                                <img class="img-fluid" width="120" src="imagenes/nav/casepc.png" alt="Cases Accesorios">
-                                                                <figcaption>Cases para PC</figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </li>
-													<li class="col-md-3">
-                                                        <a href="#">
-                                                            <figure>
-                                                                <img class="img-fluid" width="120" src="imagenes/nav/procesador.png" alt="Procesadores Complementos">
-                                                                <figcaption>Procesadores</figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </li>
-													<li class="col-md-3">
-                                                        <a href="#">
-                                                            <figure>
-                                                                <img class="img-fluid" width="120" src="imagenes/nav/placamadre.png" alt="Placas Madre( MOTHERBOARD )">
-                                                                <figcaption>Placas Madre</figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </li>
-													<li class="col-md-3">
-                                                        <a href="#">
-                                                            <figure>
-                                                                <img class="img-fluid" width="120" src="imagenes/nav/fuente.jpg" alt="Fuentes de Poder">
-                                                                <figcaption>Fuentes de Poder</figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </li>
-													<li class="col-md-3">
-                                                        <a href="#">
-                                                            <figure>
-                                                                <img class="img-fluid" width="120" src="imagenes/nav/ram.png" alt="Memorias, RAM, USB, SD">
-                                                                <figcaption>Memorias RAM</figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </li>
-                                                    <li class="col-md-3">
-                                                        <a href="#">
-                                                            <figure>
-                                                                <img class="img-fluid" width="120" src="imagenes/nav/memoria.jpg" alt="Discos Duros Accesorios">
-                                                                <figcaption>Discos Duros, SSD</figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </li>
-                                        
-                                                    <li class="col-md-3">
-                                                        <a href="#">
-                                                            <figure>
-                                                                <img class="img-fluid" width="120" src="imagenes/nav/grafica.png" alt="Tarjetas de Videos">
-                                                                <figcaption>Tarjetas graficas</figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </li>
-                                            </ul>
-                                </li>
-                                <li class="menu-item">
-                                     <a href="perifericos.html">
-                                                    Perifericos
-                                        <i class="fal fa-chevron-right"></i>
-                                    </a>
-                                            <ul class="sub-menu row" style="width: 1000px;">
-                                                    
-                                                    <li class="col-md-3">
-                                                        <a href="#">
-                                                            <figure>
-                                                                <img class="img-fluid" width="120" src="imagenes/nav/audifono.jpg" alt="Sonido, Auriculares, Parlantes">
-                                                                <figcaption>Audifonos, Parlantes</figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </li>
-													<li class="col-md-3">
-                                                        <a href="#">
-                                                            <figure>
-                                                                <img class="img-fluid" width="120" src="imagenes/nav/micro.jpg" alt="Sonido, Auriculares, Parlantes">
-                                                                <figcaption>Micros y Camaras</figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </li>
-                                                    <li class="col-md-3">
-                                                        <a href="#">
-                                                            <figure>
-                                                                <img class="img-fluid" width="120" src="imagenes/nav/teclado.png" alt="Teclados, Mouse, Pad&#039;s Mouse, Kit">
-                                                                <figcaption>Teclados</figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </li>
-													<li class="col-md-3">
-                                                        <a href="#">
-                                                            <figure>
-                                                                <img class="img-fluid" width="120" src="imagenes/nav/mause.jpg" alt="Teclados, Mouse, Pad&#039;s Mouse, Kit">
-                                                                <figcaption>Mouse, Kit</figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </li>
-                                             </ul>
-                                       </li>
-                                        <li class="menu-item">
-                                             <a href="laptops.html">
-                                                Laptops
-                                            </a>
-                                         </li>
-                                        <li class="menu-item">
-                                            <a href="monitores.html">
-                                                Monitores
-                                             </a>
-                                        </li>
-                                                                    
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 position-static">
-                        <div class="header-horizontal-menu">
-                            <ul class="menu-content">
-                                
-                                <li><a href="#">CATÁLOGO<i class="ml-1 fal fa-chevron-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="pccompleto.html">PC'S COMPLETAS</a></li>
-                                        <li><a href="exclusivo.html">EXCLUSIVO</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">OFERTAS <i class="ml-1 fal fa-chevron-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="liquidacion.html">LIQUIDACIONES</a></li>
-                                    </ul>
-                                </li>
-                                <li class="position-static"><a href="#">MARCAS<i class="ml-1 fal fa-chevron-down"></i></a>
-                                    <ul class="mega-sub-menu d-flex flex-wrap p-3" id="brands-sub-menu">
-                                        <input type="search" placeholder="Encuentra tu marca favorita" class="form-control mb-2" id="search-sub-menu-brand" autocomplete>
-                                            <li>
-                                                <a href="#">HP/a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Lenovo</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Dell</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Asus</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Aplle</a>
-                                            </li>
-                                        
-                                    </ul>
-                                </li>
-                                
-                                <li><a href="#">Gamers<i class="ml-1 fal fa-chevron-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="juegos.html">¿Que juego buscas?</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">CONTACTANOS<i class="ml-1 fal fa-chevron-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#"> MEDIOS DE PAGO </a></li>
+			<div class="header-middle">
+				<div class="container-fluid custom-container">
+					<div class="row">
+						<div class="col-lg-3">
+							<a href="#" class="hvr-grow">
+								<img src="https://cdn.discordapp.com/attachments/722535444776222854/911102530778443798/unknown.png" alt="Logo FPSTec">
+							</a>
+						</div>
+						<div class="col-lg-9">
+							<div class="header-search-cart  d-flex align-items-center">
+								<div class="header-contact d-flex align-items-center">
+									
+									<ul class="footer_box">
+										<div class="mt-3">
+											<a href="https://www.facebook.com/FPS-Tec-110376924758775">
+												<img src="https://media.discordapp.net/attachments/722535444776222854/911459950839079032/logotipo-facebook.png" width="100" height="30">
+											</a>
+											<a href="https://www.instagram.com/fpstec_sac/">
+												<img src="https://media.discordapp.net/attachments/722535444776222854/911457784686608405/Instagram-logo.png" width="50" height="25">
+											</a>
+											<a href="https://www.youtube.com/channel/UC10p-QcTRTkm1MQeuvD2KwA">
+												<img src="https://media.discordapp.net/attachments/722535444776222854/911459114545209354/ytlogo.png" width="60" height="25">
+											</a>
+											<a href="https://blogfpstec.blogspot.com/">
+												<img src="https://media.discordapp.net/attachments/722535444776222854/911462462249893919/blog.png" width="60" height="25">
+											</a>
+										</div>
+									</ul>
+									
+								</div>
+								<input-search-index-component></input-search-index-component>
+								
+									 <div class="header-cart">
+										<div class="cart-btn">
+											<a>
+												<i class="far fa-shopping-bag"></i>
+												<span class="text">Carrito</span>
+												<span class="total">S/0.00</span>
+												<span class="total">$0.00</span>
+												<span class="count">0</span>
+											</a>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="header-menu">
+				<div class="container-fluid custom-container">
+					<div class="row ">
+						<div class="col-lg-3">
+							<div class="header-menu-vertical">
+								<h4 class="menu-title">MENU</h4>
+								<ul class="menu-content menu-expand">
+									<li class="menu-item">
+										<a href="conponentes.html">
+											 Componentes de PC
+											 <i class="fal fa-chevron-right"></i>
+										</a>
+											<ul class="sub-menu row" style="width: 1000px;">
+														 <li class="col-md-3">
+															<a href="#">
+																<figure>
+																	<img class="img-fluid" width="120" src="imagenes/nav/casepc.png" alt="Cases Accesorios">
+																	<figcaption>Cases para PC</figcaption>
+																</figure>
+															</a>
+														</li>
+														<li class="col-md-3">
+															<a href="#">
+																<figure>
+																	<img class="img-fluid" width="120" src="imagenes/nav/procesador.png" alt="Procesadores Complementos">
+																	<figcaption>Procesadores</figcaption>
+																</figure>
+															</a>
+														</li>
+														<li class="col-md-3">
+															<a href="#">
+																<figure>
+																	<img class="img-fluid" width="120" src="imagenes/nav/placamadre.png" alt="Placas Madre( MOTHERBOARD )">
+																	<figcaption>Placas Madre</figcaption>
+																</figure>
+															</a>
+														</li>
+														<li class="col-md-3">
+															<a href="#">
+																<figure>
+																	<img class="img-fluid" width="120" src="imagenes/nav/fuente.jpg" alt="Fuentes de Poder">
+																	<figcaption>Fuentes de Poder</figcaption>
+																</figure>
+															</a>
+														</li>
+														<li class="col-md-3">
+															<a href="#">
+																<figure>
+																	<img class="img-fluid" width="120" src="imagenes/nav/ram.png" alt="Memorias, RAM, USB, SD">
+																	<figcaption>Memorias RAM</figcaption>
+																</figure>
+															</a>
+														</li>
+														<li class="col-md-3">
+															<a href="#">
+																<figure>
+																	<img class="img-fluid" width="120" src="imagenes/nav/memoria.jpg" alt="Discos Duros Accesorios">
+																	<figcaption>Discos Duros, SSD</figcaption>
+																</figure>
+															</a>
+														</li>
+											
+														<li class="col-md-3">
+															<a href="#">
+																<figure>
+																	<img class="img-fluid" width="120" src="imagenes/nav/grafica.png" alt="Tarjetas de Videos">
+																	<figcaption>Tarjetas graficas</figcaption>
+																</figure>
+															</a>
+														</li>
+												</ul>
+									</li>
+									<li class="menu-item">
+										 <a href="perifericos.html">
+														Perifericos
+											<i class="fal fa-chevron-right"></i>
+										</a>
+												<ul class="sub-menu row" style="width: 1000px;">
+														
+														<li class="col-md-3">
+															<a href="#">
+																<figure>
+																	<img class="img-fluid" width="120" src="imagenes/nav/audifono.jpg" alt="Sonido, Auriculares, Parlantes">
+																	<figcaption>Audifonos, Parlantes</figcaption>
+																</figure>
+															</a>
+														</li>
+														<li class="col-md-3">
+															<a href="#">
+																<figure>
+																	<img class="img-fluid" width="120" src="imagenes/nav/micro.jpg" alt="Sonido, Auriculares, Parlantes">
+																	<figcaption>Micros y Camaras</figcaption>
+																</figure>
+															</a>
+														</li>
+														<li class="col-md-3">
+															<a href="#">
+																<figure>
+																	<img class="img-fluid" width="120" src="imagenes/nav/teclado.png" alt="Teclados, Mouse, Pad&#039;s Mouse, Kit">
+																	<figcaption>Teclados</figcaption>
+																</figure>
+															</a>
+														</li>
+														<li class="col-md-3">
+															<a href="#">
+																<figure>
+																	<img class="img-fluid" width="120" src="imagenes/nav/mause.jpg" alt="Teclados, Mouse, Pad&#039;s Mouse, Kit">
+																	<figcaption>Mouse, Kit</figcaption>
+																</figure>
+															</a>
+														</li>
+												 </ul>
+										   </li>
+											<li class="menu-item">
+												 <a href="laptops.html">
+													Laptops
+												</a>
+											 </li>
+											<li class="menu-item">
+												<a href="monitores.html">
+													Monitores
+												 </a>
+											</li>
+																		
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-9 position-static">
+							<div class="header-horizontal-menu">
+								<ul class="menu-content">
+									
+									<li><a href="#">CATÁLOGO<i class="ml-1 fal fa-chevron-down"></i></a>
+										<ul class="sub-menu">
+											<li><a href="pccompleto.html">PC'S COMPLETAS</a></li>
+											<li><a href="exclusivo.html">EXCLUSIVO</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">OFERTAS <i class="ml-1 fal fa-chevron-down"></i></a>
+										<ul class="sub-menu">
+											<li><a href="liquidacion.html">LIQUIDACIONES</a></li>
+										</ul>
+									</li>
+									<li class="position-static"><a href="#">MARCAS<i class="ml-1 fal fa-chevron-down"></i></a>
+										<ul class="mega-sub-menu d-flex flex-wrap p-3" id="brands-sub-menu">
+											<input type="search" placeholder="Encuentra tu marca favorita" class="form-control mb-2" id="search-sub-menu-brand" autocomplete>
+												<li>
+													<a href="#">HP/a>
+												</li>
+												<li>
+													<a href="#">Lenovo</a>
+												</li>
+												<li>
+													<a href="#">Dell</a>
+												</li>
+												<li>
+													<a href="#">Asus</a>
+												</li>
+												<li>
+													<a href="#">Aplle</a>
+												</li>
+											
+										</ul>
+									</li>
+									
+									<li><a href="#">Gamers<i class="ml-1 fal fa-chevron-down"></i></a>
+										<ul class="sub-menu">
+											<li><a href="juegos.html">¿Que juego buscas?</a></li>
+										</ul>
+									</li>
+									<li><a href="contactanos.html">CONTACTANOS<i class="ml-1 fal fa-chevron-down"></i></a>
+										<ul class="sub-menu">
+											
+											<li><a href="#"> MEDIOS DE PAGO </a></li>
 											<li><a href="#"> DELIVERY LIMA </a></li>
 											<li><a href="#"> ENVIOS A PROVINCIA </a></li>
 											<li><a href="#"> RECLAMOS </a></li>
 											<li><a href="#"> TÉRMINOS Y CONDICIONES </a></li>
 											<li><a href="#"> POLÍTICA DE PRIVACIDAD </a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</header>
+<section class="product-area">
+    <div class="container-fluid custom-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-left">
+                    <h2 class="title border-bottom">
+                        <p class="font-weight-bold"><a href="pccompleto.html" class="float-right text-impacto mt-4">ver todo <i class="fal fa-chevron-right"></i></a></p>
+                        <a class="text-impacto font-weight-bold p-2 text-decoration-none">Liquidaciones - Ofertas</a>
+                    </h2>
                 </div>
             </div>
-        </div>
+        </div> <!-- row -->
+        <div class="product-items">
+            <div class="row product-active">
+				<div class="col-lg-2 py-2">
+					<div class="single-product mt-1 hvr-float">
+						<div class="product-image">
+							   <a href="muestra.html">
+							<img class="first-image" src="https://media.discordapp.net/attachments/878797518337634345/911507181948534804/pexels-photo-812264.png?width=884&height=587" alt="">
+							</a>
+							<ul class="product-meta">
+							<li class="login-auth" title="Agregar al carrito"><a><i class="fa fa-cart-plus"></i></a></li>
+							<li class="login-auth" title="Agregar a favoritos"><a><i class="icon ion-android-favorite-outline"></i></a></li>
+							</ul>
+						</div>
+						<div class="product-content">
+							<h4 class="text-center product-title">
+							<a href="muestra.html">
+							Laptop Air Para Escritorio
+							</a>
+								</h4>
+							<ul class="product-rating m-0 text-center">
+								<li class="rating-on" ><i class="fas fa-star"></i></li>
+								<li class="rating-on"><i class="fas fa-star"></i></li>
+								<li class="rating-on"><i class="fas fa-star"></i></li>
+								<li class=""><i class="fas fa-star"></i></li>
+								<li class=""><i class="fas fa-star"></i></li>
+							</ul>
+						<p class="text-center text-impacto font-weight-bold h6">
+						<p class="m-0 text-center text-impacto"><b>CÓDIGO:</b> 012345</p>
+						<p class="text-center text-impacto"><b>STOCK:</b> +10</p>
+						</p>
+						<div class="product-price text-center mb-3">
+							<span class="price-sale-2">
+							S/1600.00 -
+							$400.00
+						</span>
+						</div>
+						</div>
+					</div>
+					</div>
+			
+					<div class="col-lg-2 py-2">
+					<div class="single-product mt-1 hvr-float">
+						<div class="product-image">
+							<a href="muestra.html">
+							<img class="first-image" src="https://cdn.discordapp.com/attachments/878797518337634345/911508649707442226/pexels-photo-811587.png" alt="">
+							</a>
+							<ul class="product-meta">
+							<li class="login-auth" title="Agregar a carrito"><a><i class="fa fa-cart-plus"></i></a></li>
+							<li class="login-auth" title="Agregar a favoritos"><a><i class="icon ion-android-favorite-outline"></i></a></li>
+						</ul>
+						</div>
+					<div class="product-content">
+						<h4 class="text-center product-title">
+						<a href="muestra.html">
+							Laptop Dell Intel CORE i10
+						</a>
+						</h4>
+						<ul class="product-rating m-0 text-center">
+						<li class="rating-on"><i class="fas fa-star"></i></li>
+						<li class="rating-on"><i class="fas fa-star"></i></li>
+						<li class="rating-on"><i class="fas fa-star"></i></li>
+						<li class="rating-on"><i class="fas fa-star"></i></li>
+						<li class=""><i class="fas fa-star"></i></li>
+						</ul>
+						<p class="text-center text-impacto font-weight-bold h6">
+						<p class="m-0 text-center text-impacto"><b>CÓDIGO:</b> 012346</p>
+						<p class="text-center text-impacto"><b>STOCK:</b> 8</p>
+						</p>
+						<div class="product-price text-center mb-3">
+							<span class="price-sale-2">
+							S/2 789.70 -
+							$697.42
+						</span>
+						</div>
+					   </div>
+					</div>
+					 </div>
+			
+					 <div class="col-lg-2 py-2">
+						<div class="single-product mt-1 hvr-float">
+							<div class="product-image">
+								   <a href="muestra.html">
+								<img class="first-image" src="https://cdn.discordapp.com/attachments/878797518337634345/911508722554142730/pexels-photo-577210.png" alt="">
+								</a>
+								<ul class="product-meta">
+								<li class="login-auth" title="Agregar a carrito"><a><i class="fa fa-cart-plus"></i></a></li>
+								<li class="login-auth" title="Agregar a favoritos"><a><i class="icon ion-android-favorite-outline"></i></a></li>
+								</ul>
+							</div>
+							<div class="product-content">
+								<h4 class="text-center product-title">
+								<a href="muestra.html">
+								Laptops HP INTEL Core i4 8GB RAM
+								</a>
+									</h4>
+								<ul class="product-rating m-0 text-center">
+									<li class="rating-on" ><i class="fas fa-star"></i></li>
+									<li class="rating-on"><i class="fas fa-star"></i></li>
+									<li class=""><i class="fas fa-star"></i></li>
+									<li class=""><i class="fas fa-star"></i></li>
+									<li class=""><i class="fas fa-star"></i></li>
+								</ul>
+							<p class="text-center text-impacto font-weight-bold h6">
+							<p class="m-0 text-center text-impacto"><b>CÓDIGO:</b> 013588</p>
+							<p class="text-center text-impacto"><b>STOCK:</b> +10</p>
+							</p>
+							<div class="product-price text-center mb-3">
+								<span class="price-sale-2">
+								S/2000.00 -
+								$500.00
+							</span>
+							</div>
+							</div>
+						</div>
+						</div>
+			
+						<div class="col-lg-2 py-2">
+							<div class="single-product mt-1 hvr-float">
+								<div class="product-image">
+									<a href="muestra.html">
+									<img class="first-image" src="https://cdn.discordapp.com/attachments/878797518337634345/911508759409467432/pexels-photo-789434.png" alt="">
+									</a>
+									<ul class="product-meta">
+									<li class="login-auth" title="Agregar a carrito"><a><i class="fa fa-cart-plus"></i></a></li>
+									<li class="login-auth" title="Agregar a favoritos"><a><i class="icon ion-android-favorite-outline"></i></a></li>
+								</ul>
+								</div>
+							<div class="product-content">
+								<h4 class="text-center product-title">
+								<a href="muestra.html">
+									Laptop Air pro AMD Ryzen 5 3800
+								</a>
+								</h4>
+								<ul class="product-rating m-0 text-center">
+								<li class="rating-on"><i class="fas fa-star"></i></li>
+								<li class="rating-on"><i class="fas fa-star"></i></li>
+								<li class="rating-on"><i class="fas fa-star"></i></li>
+								<li class=""><i class="fas fa-star"></i></li>
+								<li class=""><i class="fas fa-star"></i></li>
+								</ul>
+								<p class="text-center text-impacto font-weight-bold h6">
+								<p class="m-0 text-center text-impacto"><b>CÓDIGO:</b> 013456</p>
+								<p class="text-center text-impacto"><b>STOCK:</b> 5</p>
+								</p>
+								<div class="product-price text-center mb-3">
+									<span class="price-sale-2">
+									S/4 400.89 -
+									$1100.22
+								</span>
+								</div>
+							   </div>
+							</div>
+							</div>
+			
+							<div class="col-lg-2 py-2">
+								<div class="single-product mt-1 hvr-float">
+									<div class="product-image">
+										<a href="muestra.html">
+										<img class="first-image" src="https://cdn.discordapp.com/attachments/878797518337634345/911508971922268200/pexels-photo-2148217.png" alt="">
+										</a>
+										<ul class="product-meta">
+										<li class="login-auth" title="Agregar a carrito"><a><i class="fa fa-cart-plus"></i></a></li>
+										<li class="login-auth" title="Agregar a favoritos"><a><i class="icon ion-android-favorite-outline"></i></a></li>
+									</ul>
+									</div>
+								<div class="product-content">
+									<h4 class="text-center product-title">
+									<a href="muestra.html">
+										Laptop perfecta para diseñadores
+									</a>
+									</h4>
+									<ul class="product-rating m-0 text-center">
+									<li class="rating-on"><i class="fas fa-star"></i></li>
+									<li class="rating-on"><i class="fas fa-star"></i></li>
+									<li class="rating-on"><i class="fas fa-star"></i></li>
+									<li class=""><i class="fas fa-star"></i></li>
+									<li class=""><i class="fas fa-star"></i></li>
+									</ul>
+									<p class="text-center text-impacto font-weight-bold h6">
+									<p class="m-0 text-center text-impacto"><b>CÓDIGO:</b> 023852</p>
+									<p class="text-center text-impacto"><b>STOCK:</b> +10</p>
+									</p>
+									<div class="product-price text-center mb-3">
+										<span class="price-sale-2">
+										S/5 200.00 -
+										$1300.00
+									</span>
+									</div>
+								   </div>
+								</div>
+								</div>
+			
+								<div class="col-lg-2 py-2">
+									<div class="single-product mt-1 hvr-float">
+										<div class="product-image">
+											   <a href="muestra.html">
+											<img class="first-image" src="https://cdn.discordapp.com/attachments/722535444776222854/911525420275482634/lp6_1.png" alt="">
+											</a>
+											<ul class="product-meta">
+											<li class="login-auth" title="Agregar a carrito"><a><i class="fa fa-cart-plus"></i></a></li>
+											<li class="login-auth" title="Agregar a favoritos"><a><i class="icon ion-android-favorite-outline"></i></a></li>
+											</ul>
+										</div>
+										<div class="product-content">
+											<h4 class="text-center product-title">
+											<a href="#">
+											Laptop HP Core i5 16RAM
+											</a>
+												</h4>
+											<ul class="product-rating m-0 text-center">
+												<li class="rating-on" ><i class="fas fa-star"></i></li>
+												<li class="rating-on"><i class="fas fa-star"></i></li>
+												<li class="rating-on"><i class="fas fa-star"></i></li>
+												   <li class=""><i class="fas fa-star"></i></li>
+												<li class=""><i class="fas fa-star"></i></li>
+											</ul>
+										<p class="text-center text-impacto font-weight-bold h6">
+										<p class="m-0 text-center text-impacto"><b>CÓDIGO:</b> 015890</p>
+										<p class="text-center text-impacto"><b>STOCK:</b> +10</p>
+										</p>
+										<div class="product-price text-center mb-3">
+											<span class="price-sale-2">
+											S/3500.90 -
+											$875.22
+										</span>
+										</div>
+										</div>
+									</div>
+									</div>
+			
+									<div class="col-lg-2 py-2">
+										<div class="single-product mt-1 hvr-float">
+											<div class="product-image">
+												   <a href="muestra.html">
+												<img class="first-image" src="https://cdn.discordapp.com/attachments/878797518337634345/911509837605642241/pexels-photo-1229861.png" alt="">
+												</a>
+												<ul class="product-meta">
+												<li class="login-auth" title="Agregar a carrito"><a><i class="fa fa-cart-plus"></i></a></li>
+												<li class="login-auth" title="Agregar a favoritos"><a><i class="icon ion-android-favorite-outline"></i></a></li>
+												</ul>
+											</div>
+											<div class="product-content">
+												<h4 class="text-center product-title">
+												<a href="muestra.html">
+												Laptop Gamer y para Diseñadores
+												</a>
+													</h4>
+												<ul class="product-rating m-0 text-center">
+													<li class="rating-on"><i class="fas fa-star"></i></li>
+													<li class="rating-on"><i class="fas fa-star"></i></li>
+													<li class="rating-on"><i class="fas fa-star"></i></li>
+													<li class="rating-on"><i class="fas fa-star"></i></li>
+													<li class="rating-on"><i class="fas fa-star"></i></li>
+												</ul>
+											<p class="text-center text-impacto font-weight-bold h6">
+											<p class="m-0 text-center text-impacto"><b>CÓDIGO:</b> 123456</p>
+											<p class="text-center text-impacto"><b>STOCK:</b> +10</p>
+											</p>
+											<div class="product-price text-center mb-3">
+												<span class="price-sale-2">
+												S/7800.05 -
+												$1950.01
+											</span>
+											</div>
+											</div>
+										</div>
+										</div>
+			
+										<div class="col-lg-2 py-2">
+											<div class="single-product mt-1 hvr-float">
+												<div class="product-image">
+													   <a href="muestra.html">
+													<img class="first-image" src="https://cdn.discordapp.com/attachments/878797518337634345/911509837605642241/pexels-photo-1229861.png" alt="">
+													</a>
+													<ul class="product-meta">
+													<li class="login-auth" title="Agregar a carrito"><a><i class="fa fa-cart-plus"></i></a></li>
+													<li class="login-auth" title="Agregar a favoritos"><a><i class="icon ion-android-favorite-outline"></i></a></li>
+													</ul>
+												</div>
+												<div class="product-content">
+													<h4 class="text-center product-title">
+													<a href="muestra.html">
+													Laptop Gamer y para Diseñadores
+													</a>
+														</h4>
+													<ul class="product-rating m-0 text-center">
+														<li class="rating-on"><i class="fas fa-star"></i></li>
+														<li class="rating-on"><i class="fas fa-star"></i></li>
+														<li class="rating-on"><i class="fas fa-star"></i></li>
+														<li class="rating-on"><i class="fas fa-star"></i></li>
+														<li class="rating-on"><i class="fas fa-star"></i></li>
+													</ul>
+												<p class="text-center text-impacto font-weight-bold h6">
+												<p class="m-0 text-center text-impacto"><b>CÓDIGO:</b> 123456</p>
+												<p class="text-center text-impacto"><b>STOCK:</b> +10</p>
+												</p>
+												<div class="product-price text-center mb-3">
+													<span class="price-sale-2">
+													S/7800.05 -
+													$1950.01
+												</span>
+												</div>
+												</div>
+											</div>
+											</div>
+            </div> <!-- row -->
+        </div> <!-- product items -->
     </div>
-</header>
+</section>
+ 
 <div class="banner-area">
-
+    <div class="container-fluid custom-container">
+        <div class="row">
+                            <div class="col-md-6">
+                    <div class="banner-image banner-2">
+                        <a target="_self" href="#"><img class="" src="https://cdn.discordapp.com/attachments/722535444776222854/911518591948558408/a5_2.png" alt="banner"></a>
+                    </div> <!-- banner image -->
+                </div>
+                            <div class="col-md-6">
+                    <div class="banner-image banner-2">
+                        <a target="_self" href="#"><img class="" src="https://cdn.discordapp.com/attachments/722535444776222854/911518591633981490/a4_2.png" alt="banner"></a>
+                    </div> <!-- banner image -->
+                </div>
+                    </div> <!-- container -->
+    </div>
 
     <div class="brand-area pt-80 pb-80">
     <div class="container-fluid custom-container">
-        <div class="row brand-active">
+		<div class="row brand-active">
                             
 			<div class="col-lg-2">
 				<div class="single-brand">
@@ -426,8 +765,8 @@
 							<img src="https://media.discordapp.net/attachments/722535444776222854/911376155435753572/masterr.png" class="">
 							<img src="https://media.discordapp.net/attachments/722535444776222854/911377873103912970/logo-Paypal.png" class="">
 							
+							
 						</div>
-						
 					</ul>
 				</div>
 				<div class="col-md-3">
@@ -439,7 +778,7 @@
 							<input type="submit" value="Go">
 						   </form>
 						   <li><a href="#">fpstec@gmail.com</a></li>
-							<li><a href="https://bit.ly/3tpwruQ">Whatsapp +51 985 838 762</a></li>
+							<li><a href="#">Whatsapp +51 985 838 762</a></li>
 						</div>
 						<ul class="social">	
 						  <li class="facebook"><a href="https://www.facebook.com/FPS-Tec-110376924758775 "><span> </span></a></li>
